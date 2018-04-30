@@ -5,7 +5,7 @@ from sklearn import linear_model
 
 # 一元线性回归
 # 参考《机器学习》周志华版，式(3.7)与(3.8)
-
+notice = " \nusage: yiyuan.py [-?] {<filename>} ... \n       <filename>     数据文件名(例:yiyuan.csv)\n "
 
 def fit_from_scikit(sample):
     reg = linear_model.LinearRegression()
@@ -27,7 +27,7 @@ def calculate_w(sample):
         sum2+=s[0]*s[0]
         sum3+=s[0]
 
-    import pdb;pdb.set_trace()
+    # import pdb;pdb.set_trace()
     # 求w
     return sum1/(sum2-(sum3*sum3)/len(sample))
 
@@ -71,7 +71,11 @@ def fit_from_file(filename):
 def main(args):
     # args的第一个参数是python程序的文件名：
     # ['linear/yiyuan.py', 'afw', 'wfqw']
-    fit_from_file(args[1])
+    try:
+        fit_from_file(args[1])
+    except BaseException as e:
+        print("\n=>未输入数据文件名")
+        print(notice)
 
 
 if __name__=="__main__":

@@ -20,3 +20,9 @@
 
 参考文章:[梯度下降从放弃到入门](https://yq.aliyun.com/articles/232003?spm=a2c4e.11153940.blogcont541976.17.1e0b87a8LtU5Ti)
 [梯度下降小结](https://www.cnblogs.com/pinard/p/5970503.html)
+
+## 对数几率回归
+
+### 梯度下降法
+
+参考《机器学习》第3.3节——对数几率回归，以及[这篇博客对损失函数的梯度下降迭代公式推导](https://blog.csdn.net/javaisnotgood/article/details/78873819)。

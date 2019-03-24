@@ -7,3 +7,4 @@
 
 
 1. [线性回归](./linear)
+2. [谱聚类](./src/Spectral_Clustering.ipynb)

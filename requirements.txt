@@ -1,5 +1,9 @@
 -i https://pypi.tuna.tsinghua.edu.cn/simple
+kaggle
 numpy
+pandas
+SciPy >= 0.13.3
 scikit-learn
-SciPy
-sympy
+matplotlib
+jupyter
+seaborn
